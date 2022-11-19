@@ -1,0 +1,18 @@
+.footer {
+  background-color: var(--secondary-dark);
+  height: 101px;
+  display: flex;
+  justify-content: center;
+  padding-top: 41px;
+  padding-bottom: 120px;
+}
+
+.footer p {
+  color: white;
+}
+
+@media (min-width: 900px) {
+  .footer {
+    padding-bottom: 41px;
+  }
+}

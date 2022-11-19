@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shanthal</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <picture class="header__imageContainer">
+          <img src="./assets/img/logo.png" alt="logo" />
+        </picture>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__listItem">
+              <a href="#presentacion">
+                <picture class="nav__itemImgeContainer">
+                  <img
+                    class="nav__itemImage"
+                    src="./assets/icons/person_outline.svg"
+                    alt="presentacion"
+                  />
+                </picture>
+                <p class="nav__itemText">Presentación</p>
+              </a>
+            </li>
+            <li class="nav__listItem">
+              <a href="#familia">
+                <picture class="nav__itemImgeContainer">
+                  <img
+                    class="nav__itemImage"
+                    src="./assets/icons/groups.svg"
+                    alt="familia"
+                  />
+                </picture>
+                <p class="nav__itemText">Familia</p>
+              </a>
+            </li>
+            <li class="nav__listItem">
+              <a href="#amigos">
+                <picture class="nav__itemImgeContainer">
+                  <img
+                    class="nav__itemImage"
+                    src="./assets/icons/child_care.svg"
+                    alt="amigos"
+                  />
+                </picture>
+                <p class="nav__itemText">Amigos</p>
+              </a>
+            </li>
+            <li class="nav__listItem">
+              <a href="#estudios">
+                <picture class="nav__itemImgeContainer">
+                  <img
+                    class="nav__itemImage"
+                    src="./assets/icons/school.svg"
+                    alt="estudios"
+                  />
+                </picture>
+                <p class="nav__itemText">Estudios</p>
+              </a>
+            </li>
+            <li class="nav__listItem">
+              <a href="#contacto">
+                <picture class="nav__itemImgeContainer">
+                  <img
+                    class="nav__itemImage"
+                    src="./assets/icons/mail_outline.svg"
+                    alt="contacto"
+                  />
+                </picture>
+                <p class="nav__itemText">Contacto</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section id="presentacion" class="hero">
+        <header class="hero__header">
+          <p class="hero__hello">Hola soy</p>
+          <h1 class="hero__nombre">Shanthal Tello</h1>
+          <p class="hero__profesion">Fullstack Developer</p>
+        </header>
+        <div class="hero__presentation">
+          <picture class="hero__imageContainer">
+            <img
+              class="hero__image"
+              src="./assets/img/shanthal.png"
+              alt="shanthal"
+            />
+          </picture>
+          <div class="card__hero card__hero--text card__hero--blue">
+            <p>
+              Desarrolladora web Fullstack, trabajo con tecnologías como: HTML,
+              CSS, JavaScript, ReactJS, NextJS, NodeJS, Express y NestJS.
+            </p>
+          </div>
+          <div class="card__hero card__hero--text card__hero--pink">
+            <p>
+              Me gusta programar, leer libros de psicología, escuchar música, me
+              gustan los gatos, jugar videojuegos y dibujar.
+            </p>
+          </div>
+          <div class="card__hero card__hero--icon card__hero--orange">
+            <img
+              class="card__heroIcon"
+              src="./assets/icons/access_time.svg"
+              alt="time icon"
+            />
+            <p>AÑOS DE EXPERIENCIA</p>
+            <p class="card__count">10+</p>
+          </div>
+          <div class="card__hero card__hero--icon card__hero--purple">
+            <img
+              class="card__heroIcon"
+              src="./assets/icons/devices.svg"
+              alt="divice icon"
+            />
+            <p>PROYECTOS COMPLETADOS</p>
+            <p class="card__count">22+</p>
+          </div>
+        </div>
+      </section>
+      <section id="familia" class="familia">
+        <h2 class="familia__title">Familia</h2>
+        <ul class="familia__listCards">
+          <li>
+            <article class="familia__card">
+              <picture class="familia__imageContainer">
+                <img src="./assets/img/mama.jpg" alt="mama" />
+              </picture>
+              <p class="familia__tipo">MADRE</p>
+              <p class="familia__name">Marta Vargas Contreras</p>
+              <div class="familiar_btnContainer">
+                <a href="#">Ver más</a>
+                <img src="./assets/icons/arrow_right.svg" alt="arrow icon" />
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="familia__card">
+              <picture class="familia__imageContainer">
+                <img src="./assets/img/papa.jpg" alt="papa" />
+              </picture>
+              <p class="familia__tipo">PADRE</p>
+              <p class="familia__name">Franco Tello Ojeda</p>
+              <div class="familiar_btnContainer">
+                <a href="#">Ver más</a>
+                <img src="./assets/icons/arrow_right.svg" alt="arrow icon" />
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="familia__card">
+              <picture class="familia__imageContainer">
+                <img src="./assets/img/hermanoRaul.jpg" alt="hermano raul" />
+              </picture>
+              <p class="familia__tipo">HERMANO</p>
+              <p class="familia__name">Raul Tello Vargas</p>
+              <div class="familiar_btnContainer">
+                <a href="#">Ver más</a>
+                <img src="./assets/icons/arrow_right.svg" alt="arrow icon" />
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="familia__card">
+              <picture class="familia__imageContainer">
+                <img
+                  src="./assets/img/hermanoPatricio.jpg"
+                  alt="hermano patricio"
+                />
+              </picture>
+              <p class="familia__tipo">HERMANO</p>
+              <p class="familia__name">Patricio Tello Vargas</p>
+              <div class="familiar_btnContainer">
+                <a href="#">Ver más</a>
+                <img src="./assets/icons/arrow_right.svg" alt="arrow icon" />
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section id="amigos" class="amigos">
+        <h2 class="amigos__title">Amigos</h2>
+        <div class="amigos__main">
+          <picture class="amigos__imageContainer">
+            <img src="./assets/img/shanthal2.png" alt="shanthal" />
+          </picture>
+          <div class="card_amigo card_amigo--jorge">
+            <img
+              class="card_amigoImage"
+              src="./assets/img/amigoJorge.png"
+              alt="jorge"
+            />
+            <p class="card_amigoName">Jorge Gonzales Atenaz</p>
+            <button>Ver más</button>
+          </div>
+          <div class="card_amigo card_amigo--carla">
+            <img
+              class="card_amigoImage"
+              src="./assets/img/amigaCarla.png"
+              alt="carla"
+            />
+            <p class="card_amigoName">Carla Ramoz Porras</p>
+            <button>Ver más</button>
+          </div>
+          <div class="card_amigo card_amigo--dayli">
+            <img
+              class="card_amigoImage"
+              src="./assets/img/amigaDayli.png"
+              alt="dayli"
+            />
+            <p class="card_amigoName">Dayli Ocampo Santos</p>
+            <button>Ver más</button>
+          </div>
+          <div class="card_amigo card_amigo--leifer">
+            <img
+              class="card_amigoImage"
+              src="./assets/img/amigoLeifer.png"
+              alt="leifer"
+            />
+            <p class="card_amigoName">Leifer Granado Torre</p>
+            <button>Ver más</button>
+          </div>
+        </div>
+      </section>
+      <section id="estudios" class="estudios">
+        <h2 class="estudios__title">Estudios</h2>
+        <div class="estudios__main">
+          <article class="estudios__card estudios__card--1">
+            <div class="estudios___cardContent">
+              <p class="estudios__cardEstudio">Ciencias de la computación</p>
+              <p class="estudios__cardInstitución">
+                Univercidad de ciencia y tecnología
+              </p>
+              <div class="estudios__cardDateContent">
+                <img src="./assets/icons/date_range.svg" alt="date" />
+                <p class="estudios_cardDate">2015 - 2020</p>
+              </div>
+            </div>
+            <div class="estudios__cardLine">
+              <div class="circle"></div>
+              <div class="rect"></div>
+            </div>
+          </article>
+          <article class="estudios__card estudios__card--2">
+            <div class="estudios___cardContent">
+              <p class="estudios__cardEstudio">Desarrollo web backend</p>
+              <p class="estudios__cardInstitución">TECSUP</p>
+              <div class="estudios__cardDateContent">
+                <img src="./assets/icons/date_range.svg" alt="date" />
+                <p class="estudios_cardDate">2014 - 2015</p>
+              </div>
+            </div>
+            <div class="estudios__cardLine">
+              <div class="circle"></div>
+              <div class="rect"></div>
+            </div>
+          </article>
+          <article class="estudios__card estudios__card--3">
+            <div class="estudios___cardContent">
+              <p class="estudios__cardEstudio">Desarrollo web frontend</p>
+              <p class="estudios__cardInstitución">TECSUP</p>
+              <div class="estudios__cardDateContent">
+                <img src="./assets/icons/date_range.svg" alt="date" />
+                <p class="estudios_cardDate">2014 - 2014</p>
+              </div>
+            </div>
+            <div class="estudios__cardLine">
+              <div class="circle"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contacto" class="contacto">
+        <h2 class="contacto__title">Contáctame</h2>
+        <div class="contacto__content">
+          <div class="contact__cardList">
+            <ul class="contact__lista">
+              <li>
+                <article class="contacto_card">
+                  <img
+                    class="contacto_cardImage"
+                    src="./assets/icons/mail_outline.svg"
+                    alt="mail icon"
+                  />
+                  <p class="contacto_cardText">Correo</p>
+                  <a class="contacto_cardValue" href="mailto:shanthal@gmail.com"
+                    >shanthal@gmail.com</a
+                  >
+                </article>
+              </li>
+              <li>
+                <article class="contacto_card">
+                  <img
+                    class="contacto_cardImage"
+                    src="./assets/icons/phonelink_ring.svg"
+                    alt="phone icon"
+                  />
+                  <p class="contacto_cardText">Teléfono</p>
+                  <a class="contacto_cardValue" href="tel:+51958696589"
+                    >+51 958 696 589</a
+                  >
+                </article>
+              </li>
+            </ul>
+          </div>
+          <form id="contact__form" class="contact__form" novalidate>
+            <div class="form__control">
+              <label for="txtNombre">Nombre:</label>
+              <input
+                autocomplete="off"
+                type="text"
+                id="txtNombre"
+                name="nombre"
+                placeholder="Su nombre"
+              />
+              <div id="nombre__error" class="error__mesage--false">
+                Por favo ingrese su nombre.
+              </div>
+            </div>
+            <div class="form__control">
+              <label for="txtCorreo">Correo:</label>
+              <input
+                autocomplete="off"
+                type="email"
+                id="txtCorreo"
+                name="correo"
+                placeholder="Su correo"
+              />
+              <div id="correo__error" class="error__mesage--false">
+                Por favo ingrese un correo válido.
+              </div>
+            </div>
+            <div class="form__control">
+              <label for="txtMensaje">Mensaje:</label>
+              <textarea
+                autocomplete="off"
+                name="mensaje"
+                id="txtMensaje"
+                cols="30"
+                rows="5"
+                placeholder="Su mensaje"
+              ></textarea>
+              <div id="mensaje__error" class="error__mesage--false">
+                Por favo ingrese su mensaje.
+              </div>
+            </div>
+            <button type="submit">
+              <img src="./assets/icons/send.svg" alt="send icon" />
+              <span>Enviar Mensaje</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Desarrollado por Jair Deyner Tello Vargas :)</p>
+    </footer>
+  </body>
+</html>

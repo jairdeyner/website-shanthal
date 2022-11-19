@@ -1,0 +1,110 @@
+:root {
+  /*Breakpoints*/
+  --xs: 320px;
+  --sm: 580px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1250px;
+
+  --xs-number: 320;
+  --xl-number: 1250;
+
+  /*colors*/
+  --primary: #03a9f4;
+  --primary-light: #67daff;
+  --primary-dark: #007ac1;
+  --text: #6c6c6c;
+  --text-60: rgba(108, 108, 108, 0.6);
+  --text-dark: #363636;
+
+  --secondary: #1f1f38;
+  --secondary-75: rgba(31, 31, 56, 0.75);
+  --secondary-light: #484662;
+  --secondary-dark: #000013;
+
+  /*font size*/
+  --text-fs-small: clamp(
+    10px,
+    10px + (14 - 10) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    14px
+  );
+  --text-fs-normal: clamp(
+    14px,
+    14px + (16 - 14) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    16px
+  );
+  --text-fs-mediano: clamp(
+    16px,
+    16px + (18 - 16) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    18px
+  );
+  --text-fs-grande: clamp(
+    18px,
+    18px + (20 - 18) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    20px
+  );
+  --text-fs-extraGrande: clamp(
+    20px,
+    20px + (26 - 20) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    26px
+  );
+  --text-fs-heading-grande: clamp(
+    35px,
+    35px + (40 - 35) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    40px
+  );
+  --text-fs-heading-extraGrande: clamp(
+    38px,
+    38px + (42 - 38) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    42px
+  );
+
+  --border-radius-nav: clamp(
+    12px,
+    12px + (20 - 12) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    20px
+  );
+}
+
+*,
+*::before,
+*::after {
+  font-family: "Roboto", sans-serif;
+  color: var(--text);
+  font-size: var(--text-fs-normal);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  color: var(--primary-dark);
+  font-weight: 700;
+  font-size: var(--text-fs-heading-grande);
+  text-align: center;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 1290px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

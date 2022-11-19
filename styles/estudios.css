@@ -1,0 +1,120 @@
+.estudios {
+  margin-bottom: clamp(
+    50px,
+    50px + (90 - 50) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    90px
+  );
+}
+
+.estudios__title {
+  margin-top: clamp(
+    20px,
+    20px + (27 - 20) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    27px
+  );
+  margin-bottom: clamp(
+    60px,
+    60px + (86 - 60) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    86px
+  );
+}
+
+.estudios__main {
+  display: grid;
+  justify-items: center;
+}
+
+.estudios__card {
+  width: 306px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.estudios___cardContent {
+  padding-bottom: 20px;
+}
+
+.estudios__cardEstudio {
+  color: var(--text-dark);
+}
+
+.estudios__cardInstitución,
+.estudios_cardDate {
+  font-size: var(--text-fs-small);
+}
+
+.estudios__cardDateContent {
+  display: flex;
+  gap: clamp(
+    7px,
+    7px + (12 - 7) * (100vw - var(--xs)) / (var(--xl-number) - var(--xs-number)),
+    12px
+  );
+}
+
+.estudios__cardEstudio {
+  margin-bottom: clamp(
+    5px,
+    5px + (9 - 5) * (100vw - var(--xs)) / (var(--xl-number) - var(--xs-number)),
+    9px
+  );
+}
+
+.estudios__cardInstitución {
+  margin-bottom: clamp(
+    9px,
+    9px + (16 - 9) * (100vw - var(--xs)) / (var(--xl-number) - var(--xs-number)),
+    16px
+  );
+}
+
+.estudios__cardLine {
+  width: 13px;
+}
+
+.estudios__cardLine .circle {
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--primary-dark);
+}
+
+.estudios__cardLine .rect {
+  margin-left: auto;
+  margin-right: auto;
+  width: 3px;
+  height: calc(100% - 13px);
+  background-color: var(--primary-dark);
+}
+
+@media (min-width: 653px) {
+  .estudios__card--1 {
+    grid-area: card1;
+    justify-self: end;
+  }
+
+  .estudios__card--2 {
+    grid-area: card2;
+    justify-self: start;
+    transform: translateX(-13px);
+  }
+
+  .estudios__card--3 {
+    grid-area: card3;
+    justify-self: end;
+  }
+
+  .estudios__main {
+    justify-items: initial;
+    grid-template-areas:
+      "card1 ."
+      ". card2"
+      "card3 .";
+  }
+
+  .estudios__card--2 .estudios__cardLine {
+    order: -1;
+  }
+}

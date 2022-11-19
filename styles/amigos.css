@@ -1,0 +1,136 @@
+.amigos {
+  margin-bottom: clamp(
+    50px,
+    50px + (90 - 50) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    90px
+  );
+}
+
+.amigos__title {
+  margin-top: clamp(
+    20px,
+    20px + (27 - 20) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    27px
+  );
+  margin-bottom: clamp(
+    60px,
+    60px + (86 - 60) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    86px
+  );
+}
+
+.amigos__imageContainer {
+  display: flex;
+  justify-content: center;
+  grid-area: imageFriend;
+}
+
+.amigos__imageContainer img {
+  width: clamp(
+    150px,
+    150px + (230 - 150) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    230px
+  );
+}
+
+.amigos__main {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  grid-template-areas:
+    "imageFriend"
+    "cardJorge"
+    "cardCarla"
+    "cardDayli"
+    "cardLeifer";
+}
+
+.card_amigo {
+  width: 297px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.08);
+  border-radius: clamp(
+    15px,
+    15px + (15 - 20) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    20px
+  );
+  padding: 15px 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_amigoImage {
+  margin-bottom: clamp(
+    20px,
+    20px + (20 - 26) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    26px
+  );
+}
+
+.card_amigoName {
+  margin-bottom: clamp(
+    12px,
+    12px + (12 - 16) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    16px
+  );
+}
+
+.card_amigo--jorge {
+  grid-area: cardJorge;
+}
+
+.card_amigo--carla {
+  grid-area: cardCarla;
+}
+
+.card_amigo--dayli {
+  grid-area: cardDayli;
+}
+
+.card_amigo--leifer {
+  grid-area: cardLeifer;
+}
+
+.card_amigo button {
+  border: none;
+  background-color: transparent;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+@media (min-width: 654px) {
+  .amigos__main {
+    grid-template-areas:
+      "imageFriend cardJorge"
+      "imageFriend cardCarla"
+      "cardDayli cardLeifer";
+  }
+
+  .amigos__imageContainer {
+    justify-items: start;
+    align-items: center;
+  }
+
+  .card_amigo--jorge,
+  .card_amigo--carla,
+  .card_amigo--leifer {
+    justify-items: end;
+  }
+}
+
+@media (min-width: 971px) {
+  .amigos__main {
+    grid-template-areas:
+      "cardJorge imageFriend cardCarla"
+      "cardDayli imageFriend cardLeifer";
+      row-gap: 89px;
+  }
+}

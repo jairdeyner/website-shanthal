@@ -1,0 +1,150 @@
+.hero {
+  padding-top: clamp(
+    30px,
+    30px + (50 - 30) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    50px
+  );
+  margin-bottom: clamp(
+    50px,
+    50px + (90 - 50) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    90px
+  );
+}
+
+.hero__header {
+  text-align: center;
+  margin-bottom: clamp(
+    40px,
+    40px + (66 - 40) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    66px
+  );
+}
+
+.hero__hello {
+  font-size: var(--text-fs-grande);
+}
+
+.hero__nombre {
+  font-size: var(--text-fs-heading-extraGrande);
+  color: var(--primary);
+}
+
+.hero__profesion {
+  color: var(--text-60);
+}
+
+.hero__presentation {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "image"
+    "cardMe"
+    "cardGustos"
+    "cardExp"
+    "cardProyects";
+}
+
+.hero__imageContainer {
+  display: flex;
+  justify-content: center;
+  grid-area: image;
+}
+
+.hero__image {
+  width: clamp(
+    300px,
+    300px + (454 - 300) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    454px
+  );
+}
+
+.card__hero {
+  padding: 22px;
+  border-radius: clamp(
+    14px,
+    14px + (16 - 14) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    16px
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__hero--icon {
+  text-align: center;
+  flex-direction: column;
+  gap: clamp(
+    8px,
+    8px + (13 - 8) * (100vw - var(--xs)) / (var(--xl-number) - var(--xs-number)),
+    13px
+  );
+}
+
+.card__count {
+  font-weight: 700;
+  font-size: var(--text-fs-extraGrande);
+}
+
+.card__hero--blue {
+  background-color: #bfe8fc;
+  grid-area: cardMe;
+}
+
+.card__hero--pink {
+  background-color: #ffc3e9;
+  grid-area: cardGustos;
+}
+
+.card__hero--orange {
+  background-color: #fbd49b;
+  grid-area: cardExp;
+}
+
+.card__hero--purple {
+  background-color: #c9a9ea;
+  grid-area: cardProyects;
+}
+
+@media (min-width: 525px) {
+  .hero__presentation {
+    grid-template-areas:
+      "image image"
+      "cardMe cardGustos"
+      "cardExp cardProyects";
+  }
+}
+
+@media (min-width: 758px) {
+  .hero__imageContainer {
+    justify-items: start;
+  }
+
+  .hero__presentation {
+    grid-template-areas:
+      "image cardExp"
+      "image cardExp"
+      "image cardProyects"
+      "cardMe cardGustos";
+  }
+}
+
+@media (min-width: 900px) {
+  .hero__imageContainer {
+    justify-items: center;
+    align-items: center;
+  }
+
+  .hero__presentation {
+    grid-template-columns: 3fr 6fr 3fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "cardMe image cardGustos"
+      ". image ."
+      "cardExp image cardProyects";
+  }
+}

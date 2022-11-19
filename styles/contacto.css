@@ -1,0 +1,197 @@
+.contacto {
+  margin-bottom: clamp(
+    50px,
+    50px + (90 - 50) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    90px
+  );
+}
+
+.contacto__title {
+  margin-top: clamp(
+    20px,
+    20px + (27 - 20) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    27px
+  );
+  margin-bottom: clamp(
+    60px,
+    60px + (86 - 60) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    86px
+  );
+}
+
+.contacto__content {
+  max-width: 666px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-areas: "form" "cards";
+  gap: clamp(
+    20px,
+    20px + (76 - 20) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    76px
+  );
+}
+
+.contact__cardList {
+  grid-area: cards;
+}
+
+.contact__form {
+  grid-area: form;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(
+    15px,
+    15px + (25 - 15) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    25px
+  );
+}
+
+.form__control {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(
+    8px,
+    8px + (18 - 8) * (100vw - var(--xs)) / (var(--xl-number) - var(--xs-number)),
+    18px
+  );
+}
+
+.form__control label {
+  color: var(--text-dark);
+}
+
+.form__control input {
+  height: clamp(
+    30px,
+    30px + (55 - 30) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    55px
+  );
+}
+
+.form__control textarea {
+  resize: vertical;
+}
+
+.form__control input,
+.form__control textarea {
+  background-color: transparent;
+  border: 1px solid;
+  color: inherit;
+  border-radius: clamp(
+    5px,
+    5px + (8 - 5) * (100vw - var(--xs)) / (var(--xl-number) - var(--xs-number)),
+    8px
+  );
+  padding: 0.8em;
+}
+
+.form__control input:focus,
+.form__control textarea:focus {
+  outline: none;
+}
+
+.form__control input::placeholder,
+.form__control textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.error__mesage--true {
+  color: red;
+  display: block;
+}
+
+.error__mesage--false {
+  color: red;
+  display: none;
+}
+
+.error__campo {
+  border: 1px solid red !important;
+}
+
+.contact__form button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: max-content;
+  padding: clamp(
+    10px,
+    10px + (19 - 10) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    19px
+  );
+  background-color: var(--primary-dark);
+  color: #fff;
+  border: none;
+  border-radius: clamp(
+    8px,
+    8px + (14 - 8) * (100vw - var(--xs)) / (var(--xl-number) - var(--xs-number)),
+    14px
+  );
+}
+
+.contact__form button:hover {
+  background-color: var(--primary);
+}
+
+.contact__form button span {
+  color: inherit;
+  font-weight: bold;
+}
+
+.contact__lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(
+    15px,
+    15px + (32 - 15) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    32px
+  );
+}
+
+.contacto_card {
+  background-color: var(--primary-dark);
+  padding: 15px;
+  border-radius: clamp(
+    14px,
+    14px + (16 - 14) * (100vw - var(--xs)) /
+      (var(--xl-number) - var(--xs-number)),
+    16px
+  );
+  display: flex;
+  flex-direction: column;
+  gap: clamp(
+    3px,
+    3px + (8 - 3) * (100vw - var(--xs)) / (var(--xl-number) - var(--xs-number)),
+    8px
+  );
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto_cardText,
+.contacto_cardValue {
+  color: #fff;
+}
+
+@media (min-width: 505px) {
+  .contacto__content {
+    grid-template-areas: "cards form";
+  }
+
+  .contact__lista {
+    grid-template-columns: 1fr;
+  }
+}
